@@ -1,0 +1,37 @@
+\documentclass[11pt, a4paper]{awesome-cv}
+\fontdir[fonts/]
+\newcommand*{\sectiondir}{resume/}
+\usepackage{import}
+
+\colorlet{awesome}{awesome-concrete}
+% Valid colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+% Or define your own colors:
+%\definecolor{awesome}  {HTML}{CA63A8}
+%\definecolor{darktext} {HTML}{414141}
+%\definecolor{text}     {HTML}{414141}
+%\definecolor{graytext} {HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+% Override a separator for social information in the header (default: ' | '):
+%\headersocialsep[\quad\textbar\quad]
+
+\name     {Ali C.}{Demiralp}
+\address  {Roermonder Straße 286, 52072 Aachen, Germany}
+\mobile   {(+49) 176-7100-6539} 
+\email    {demiralp@vr.rwth-aachen.de}
+%\homepage{www.alidemiralp.com}
+\github   {acdemiralp}
+\linkedin {acdemiralp}
+%\position{Software Engineer{\enskip\cdotp\enskip}Computer Scientist}
+
+% Ali C. Demiralp~~~·~~~Résumé
+\makecvfooter{\today}{}{\thepage}
+
+\begin{document}
+\makecvheader
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{experience.tex}
+\import{\sectiondir}{publications.tex}
+\import{\sectiondir}{skills.tex}
+\import{\sectiondir}{extracurricular.tex}
+\end{document}
